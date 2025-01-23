@@ -2,6 +2,8 @@ runtime: python39
 
 entrypoint: gunicorn -b :8080 app:app
 
+# This is the configuration file for the App Engine app
+# This file is used to configure the app's deployment to App Engine
 handlers:
 - url: /.*
   script: auto
